@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="HMTContainTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="79"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8sQ-KB-eyI">
+                        <rect key="frame" x="18" y="0.0" width="79" height="79"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="8sQ-KB-eyI" secondAttribute="height" multiplier="1:1" id="uzV-t1-OHJ"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="J1T-fN-Ndb">
+                        <rect key="frame" x="117" y="0.0" width="195" height="79"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="8sQ-KB-eyI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-8" id="ClY-4u-oea"/>
+                    <constraint firstItem="J1T-fN-Ndb" firstAttribute="leading" secondItem="8sQ-KB-eyI" secondAttribute="trailing" constant="20" id="WGF-rK-0Za"/>
+                    <constraint firstItem="8sQ-KB-eyI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="YDn-Ru-EAF"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="J1T-fN-Ndb" secondAttribute="trailing" id="iDg-YF-FHz"/>
+                    <constraint firstItem="J1T-fN-Ndb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-8" id="kzJ-sd-HB4"/>
+                    <constraint firstItem="J1T-fN-Ndb" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="lre-ej-YyJ"/>
+                    <constraint firstItem="J1T-fN-Ndb" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" constant="8" id="sbC-t7-1QJ"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="8sQ-KB-eyI" secondAttribute="bottom" constant="-8" id="uLZ-DS-HvR"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="lre-ej-YyJ"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="image" destination="8sQ-KB-eyI" id="Yd4-tw-iQW"/>
+                <outlet property="title" destination="J1T-fN-Ndb" id="ozb-mh-831"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

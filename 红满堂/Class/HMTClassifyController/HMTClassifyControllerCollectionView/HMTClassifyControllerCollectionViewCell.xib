@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="HMTClassifyControllerCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="104" height="96"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="104" height="96"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="职场交流" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wc8-KU-RaM">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="5e6-ub-Gg2"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Xa9-JF-NYi">
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Xa9-JF-NYi" secondAttribute="height" multiplier="1:1" id="B9S-9Q-tLh"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Wc8-KU-RaM" secondAttribute="bottom" id="A0d-hm-Obr"/>
+                <constraint firstAttribute="trailing" secondItem="Wc8-KU-RaM" secondAttribute="trailing" id="E48-Kl-6T6"/>
+                <constraint firstItem="Xa9-JF-NYi" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="HNn-dD-Lh5"/>
+                <constraint firstItem="Wc8-KU-RaM" firstAttribute="top" secondItem="Xa9-JF-NYi" secondAttribute="bottom" id="Z1f-d3-LBo"/>
+                <constraint firstItem="Xa9-JF-NYi" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="lwf-8E-1nr"/>
+                <constraint firstItem="Wc8-KU-RaM" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="npP-k8-CtF"/>
+                <constraint firstItem="Wc8-KU-RaM" firstAttribute="top" secondItem="Xa9-JF-NYi" secondAttribute="bottom" id="pC7-On-oRd"/>
+            </constraints>
+            <size key="customSize" width="104" height="96"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="pC7-On-oRd"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="cellImgView" destination="Xa9-JF-NYi" id="OzW-vp-FUE"/>
+                <outlet property="cellLabel" destination="Wc8-KU-RaM" id="vwe-Hm-LAx"/>
+            </connections>
+            <point key="canvasLocation" x="375" y="319"/>
+        </collectionViewCell>
+    </objects>
+</document>

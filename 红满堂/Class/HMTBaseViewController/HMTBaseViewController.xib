@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HMTBaseViewController">
+            <connections>
+                <outlet property="headerView" destination="vnY-dX-sqq" id="0Hz-nl-vwJ"/>
+                <outlet property="scrollView" destination="Y6e-4i-elM" id="zzk-7f-3Si"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vnY-dX-sqq" customClass="HMTHeaderView">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="7gx-fp-CKh"/>
+                    </constraints>
+                </view>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y6e-4i-elM" customClass="HMTScrollVIew">
+                    <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Y6e-4i-elM" secondAttribute="bottom" id="0hM-Kn-wiR"/>
+                <constraint firstItem="vnY-dX-sqq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="aC9-3m-Tzg"/>
+                <constraint firstAttribute="trailing" secondItem="Y6e-4i-elM" secondAttribute="trailing" id="f6J-b0-WAe"/>
+                <constraint firstAttribute="trailing" secondItem="vnY-dX-sqq" secondAttribute="trailing" id="l6z-83-DWd"/>
+                <constraint firstItem="vnY-dX-sqq" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="u3e-W3-Bbc"/>
+                <constraint firstItem="Y6e-4i-elM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="vma-lf-bLV"/>
+                <constraint firstItem="Y6e-4i-elM" firstAttribute="top" secondItem="vnY-dX-sqq" secondAttribute="bottom" id="x7l-8J-j1h"/>
+            </constraints>
+            <point key="canvasLocation" x="333" y="-236"/>
+        </view>
+    </objects>
+</document>

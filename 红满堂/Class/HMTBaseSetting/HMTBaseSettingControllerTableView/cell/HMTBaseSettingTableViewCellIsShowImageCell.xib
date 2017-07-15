@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="HMTBaseSettingTableViewCellIsShowImageCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="是否显示图片" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cBJ-yS-ZfZ">
+                        <rect key="frame" x="20" y="0.0" width="231" height="43"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="qkd-U2-myD"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="qkd-U2-myD"/>
+                            </mask>
+                        </variation>
+                    </label>
+                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ebn-Fr-s3m">
+                        <rect key="frame" x="251" y="6" width="51" height="31"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="51" id="Gps-Kd-TCD"/>
+                            <constraint firstAttribute="height" constant="20" id="wjg-Ob-0Aa"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Gps-Kd-TCD"/>
+                                <exclude reference="wjg-Ob-0Aa"/>
+                            </mask>
+                        </variation>
+                    </switch>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GRe-d0-iLN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.89803921568627454" green="0.89803921568627454" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="cfl-Xf-EZm"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="GRe-d0-iLN" secondAttribute="trailing" constant="-8" id="BGV-hq-b9T"/>
+                    <constraint firstItem="cBJ-yS-ZfZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="12" id="E40-fv-OvS"/>
+                    <constraint firstItem="GRe-d0-iLN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-8" id="EqJ-jd-st4"/>
+                    <constraint firstItem="GRe-d0-iLN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="Qcr-r5-CTS"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="ebn-Fr-s3m" secondAttribute="trailing" constant="12" id="UCy-fo-fei"/>
+                    <constraint firstItem="cBJ-yS-ZfZ" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" constant="8" id="Z7D-Rh-26H"/>
+                    <constraint firstItem="ebn-Fr-s3m" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="bAd-DW-G4b"/>
+                    <constraint firstItem="cBJ-yS-ZfZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-8" id="fPc-63-ZpU"/>
+                    <constraint firstItem="ebn-Fr-s3m" firstAttribute="leading" secondItem="cBJ-yS-ZfZ" secondAttribute="trailing" id="q0P-qb-MWg"/>
+                    <constraint firstItem="ebn-Fr-s3m" firstAttribute="leading" secondItem="GRe-d0-iLN" secondAttribute="trailing" constant="-8" id="yDP-xR-fHF"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="yDP-xR-fHF"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="410" y="284"/>
+        </tableViewCell>
+    </objects>
+</document>

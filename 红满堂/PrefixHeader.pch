@@ -1,0 +1,54 @@
+//
+//  PrefixHeader.pch
+//  红满堂
+//
+//  Created by 欧阳铨 on 16/8/20.
+//  Copyright © 2016年 欧阳铨. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+#import "Toast+UIView.h"
+
+/// weakself
+#define WeakSelf __weak typeof(self) weakSelf = self;
+/// 快速创建RGB颜色
+#define rgbColor(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+/// 屏幕高度
+#define MainScreenHeight CGRectGetHeight([UIScreen mainScreen].bounds)
+/// 屏幕宽度
+#define MainScreenWidth CGRectGetWidth([UIScreen mainScreen].bounds)
+///内容高度
+#define kContainViewHeight MainScreenHeight - 152
+/// 退出登录通知名称
+#define KNotificationLogOut @"KNotificationLogOut"
+/// 成登录通知名称
+#define KNotificationLogIn @"KNotificationLogIn"
+/// 二手页面tabbar颜色
+#define kSecendHandTabbarColor rgbColor(251,24,39)
+/// 推销页面tabbar颜色
+#define kRecommendTabbarColor rgbColor(26,166,214)
+/// 分区页面tabbar颜色
+#define kClassifyTabbarColor rgbColor(120,84,177)
+/// 页面背景色
+#define kBlackGroundColor rgbColor(135,135,135)
+/// token 保存地址
+#define AccessTokenFilepath [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:@"account.data"]
+/// userModel 保存地址
+#define UserModelFilepath [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:@"userModel.data"]
+/// 手机号码保存地址
+#define MobilePhoneFilepath [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:@"mobile.data"]
+/// controller的背景色
+#define kControllerBlackColor rgbColor(229,229,229)
+#ifdef DEBUG
+#define HMTLog(s, ... ) NSLog( @"[%@：in line: %d]-->[message: %@]", [[NSString stringWithUTF8String:__FILE__] lastPathComponent], __LINE__, [NSString stringWithFormat:(s), ##__VA_ARGS__] )
+#else
+#define HMTLog(s, ... )
+#endif
+//重写NSLog,Debug模式下打印日志和当前行数
+#if DEBUG
+#define NSLog(FORMAT, ...) fprintf(stderr,"\nfunction:%s line:%d content:%s\n", __FUNCTION__, __LINE__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
+#else
+#define NSLog(FORMAT, ...) nil
+#endif
+#endif /* PrefixHeader_pch */
